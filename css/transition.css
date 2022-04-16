@@ -1,0 +1,57 @@
+ul {
+    background-color: red;
+    padding: 0px;
+}
+
+ul li {
+    background-color: yellow;
+    /* list-style-type: circle; listin qarsisinda gelen noqteleri daireleyir */
+    /* list-style-position: inside;
+    list-style-image: url(./Project/img/helpbox-contact.jpg); */
+    list-style: circle;
+}
+
+table,
+tr,
+td {
+    border: 1px solid red;
+    /* table-layout: auto;teybilin dizayinini deyisir auto verende yaziya uygun olcu deyisir */
+    /* caption-side: bottom;  caption tagi tablenin uzerinde ne ise yaradgini gostermek ucun istifadde olunur */
+}
+
+.blog {
+    width: 20%;
+    height: 140px;
+    background-color: rebeccapurple;
+
+}
+
+.div {
+    width: 30%;
+    height: 160px;
+    background-color: blue;
+    transition-duration: 5s;
+}
+
+.blog:hover {
+    background-color: gray;
+}
+
+.div:hover {
+    background-color: green;
+    cursor: pointer;
+    height: 400px;
+    width: 40%;
+    transition-delay: 0.3s;
+    /*ne qeder gozlesin ve sonra proses bas versin*/
+    transition-duration: 2s;
+    /*nece saniyeye dizayni tetbiq elesin */
+    transition-property: background-color;
+    /*bu ise animasiyanin neye tetbiq olunmasini gosterir meselen width,height, ve ya background*/
+    transition-timing-function: ease;
+    /*bu ise animasiyanin ritmini teyin edir yeni ilk defe animasiya yavas sonra suretlensin sonra yene yavaslasin kimi */
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    /*bunun vasitesi ile ritminin nece deyismesini ozumuz teyin ede bilerik hetta gogle da css cubic yazib ozumuz hazir olculer teyin ede bilerik*/
+
+
+}
